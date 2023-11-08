@@ -7,7 +7,7 @@ environment{
         AWS_ACCOUNT_ID="614544761807"
         REGION="eu-north-1"
         DOCKER_REGISTRY = 'docker.io'
-        DOCKER_REGISTRY_CREDENTIALS = 'docker-creds'
+        DOCKER_REGISTRY_CREDENTIALS = 'docker_credientails'
     }
   stages {
     stage('Clone') {
