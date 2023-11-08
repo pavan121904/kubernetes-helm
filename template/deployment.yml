@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: catalogue
+spec:
+  replicas: {{ .Values.deployment.replicaCount }}
+  selector:
+    matchLabels:
+      name: catalogue
+      tier: app
+  template:
+    metadata:
+      labels:
+        name: catalogue
+        tier: app
+    spec:
+      containers:
+        - name: catalogue
+          imagePullPolicy: Always
+          image: "pavanreddy1219/catalogue:{{ .Values.deployment.imageVersion }}"
+          envFrom:
+            - configMapRef:
+                name: catalogue-configmap
+          resources:
+            requests:
+              memory: "100Mi"
+              cpu: "250m"
+            limits:
+              memory: "200Mi"
+              cpu: "500m"
