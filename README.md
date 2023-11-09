@@ -36,17 +36,7 @@ To get started with this repository, follow these steps:
 
 5. Deploy the microservice to your Amazon EKS cluster using Helm and the provided Kubernetes Deployment YAML file.
 
-## Contributing
 
-We encourage contributions to make this microservice and repository even better. Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute.
-
-## License
-
-This repository is distributed under the [License Name](LICENSE). Review the license file for terms and conditions.
-
-## Team Collaboration
-
-We're excited about the potential of this repository and look forward to collaborating with the team. Let's make this "Catalogue Microservice" a powerful and efficient component of our project!
 
 ---
 
